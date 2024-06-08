@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Envoyer un commentaire</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link rel="stylesheet" href="style2.css">
+    <link href="styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="toummy.css" />
+</head>
+<body style="background-color: white;">
+     <!-- Navigation-->
+     <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav" style="height:10%;background-color:#3131EC;border-radius:20px;">
+        <div class="container" style="background-color: #FCDF06; height: 3%;">
+            <img class="navbar-brand" src="supdeco logo.jpg">
+            <img class="navbar-brand" src="Untitled.png" style="position:absolute; left:40%; height:89%; max-width: 100%;">
+        </div>
+        <div class="dropdown" style="transition:1s ease;position:absolute; left:70%; z-index:1;">
+          
+            <div class="dropdown-center">
+                
+              <a href="index2.html"><button class="btn btn-outline-success" style="background-color:#3131EC; color: white;
+              border-color: #3131EC;margin-top: 2%;font-weight: 900;">Aller aux chronomètres</button></a>
+              
+       
+         
+    </div>
+        <div id="timer">00:00</div>
+
+        <div id="blancOeil1"></div>
+        <div id="oeil1"></div>
+        <div id="cleinOeil1"></div>
+    
+        
+        <div id="blancOeil2"></div>
+        <div id="oeil2"></div>
+        <div id="cleinOeil2"></div>
+        <div id="bouche"></div>       
+    </nav>
+
+    
+
+                        <form action="verif.php" method="POST">
+                            <h3>Veuillez préciser votre classe</h3>
+
+                            <input type="hidden" id="boutonChoisi" name="bouton_choisi" value="">
+                            <button type="button" name="bouton" class="btn btn-primary" value="BTL1A" onclick="envoieValeur('BTL1A')" style="background-color: white; border: 4px solid; border-color: #3131EC;font-weight: 900;color: darkblue; ">BTL1 A</button>
+
+                            <button type="button" name="bouton" class="btn btn-primary" value="BTL2A" onclick="envoieValeur('BTL2A')"  style="background-color: white; border: 4px solid; border-color: #3131EC;font-weight: 900;color: darkblue;">BTL2 A</button>
+
+                            <button type="button" name="bouton" class="btn btn-primary" value="BTL2B" onclick="envoieValeur('BTL2B')" style="background-color: white; border: 4px solid; border-color: #3131EC;font-weight: 900;color: darkblue;">BTL2 B</button> 
+
+                            <button type="button" name="bouton" class="btn btn-primary" value="BTL3" onclick="envoieValeur('BTL3')" style="background-color: white; border: 4px solid; border-color: #FCDF06;font-weight: 900;color: darkblue;">BTL 3</button>
+
+                            <button type="button" name="bouton" class="btn btn-primary" value="L1GESTIONA" onclick="envoieValeur('L1GESTIONA')" style="background-color: white; border: 4px solid; border-color: #3131EC;font-weight: 900;color: darkblue;">L1 GESTION A</button>
+
+                            <button type="button" name="bouton" class="btn btn-primary" value="L2GESTIONA" onclick="envoieValeur('L2GESTIONA')" style="background-color: white; border: 4px solid; border-color: #FCDF06; font-weight: 900;color: darkblue;">L2 GESTION A</button>
+
+                            <button type="button" name="bouton" class="btn btn-primary" value="L2GESTIONB" onclick="envoieValeur('L2GESTIONB')" style="background-color: white; border: 4px solid; border-color: #FCDF06; font-weight: 900;color: darkblue;">L2 GESTION B</button>
+
+                            <button type="button" name="bouton" class="btn btn-primary" value="L2GESTIONC" onclick="envoieValeur('L2GESTIONC')" style="background-color: white; border: 4px solid; border-color: #3131EC;font-weight: 900;color: darkblue;">L2 GESTION C</button>
+
+                            <button type="button" name="bouton" class="btn btn-primary" value="FINANCE" onclick="envoieValeur('FINANCE')" style="background-color: white; border: 4px solid; border-color: #3131EC;font-weight: 900;color: darkblue;">FINANCE-COMPTABILITE</button>
+
+                            <button type="button" name="bouton" class="btn btn-primary" value="QHSE" onclick="envoieValeur('QHSE')" style="background-color: white; border: 4px solid; border-color: #3131EC;font-weight: 900;color: darkblue;">QHSE</button>
+
+                            <button type="button" name="bouton" class="btn btn-primary" value="COMMERCE" onclick="envoieValeur('COMMERCE')" style="background-color: white; border: 4px solid; border-color: #FCDF06; font-weight: 900;color: darkblue;">COMMERCE INTERNATIONAL</button>
+
+                            <button type="button" name="bouton" class="btn btn-primary" value="GESTION" onclick="envoieValeur('GESTION')" style="background-color: white; border: 4px solid; border-color: #3131EC;font-weight: 900;color: darkblue;">GESTION DES RESSOURCES HUMAINES</button>
+
+                            <button type="button" name="bouton" class="btn btn-primary" value="L1INFOA" onclick="envoieValeur('L1INFOA')" style="background-color: white; border: 4px solid; border-color: #FCDF06; font-weight: 900;color: darkblue;">L1 INFORMATIQUE A</button>
+
+                            <button type="button" name="bouton" class="btn btn-primary" value="L2DROIT" onclick="envoieValeur('L2DROIT')" style="background-color: white; border: 4px solid; border-color: #FCDF06; font-weight: 900;color: darkblue;">L2 DROIT</button>
+
+                            <button type="button" name="bouton" class="btn btn-primary" value="L2INFO" onclick="envoieValeur('L2INFO')" style="background-color: white; border: 4px solid; border-color: #FCDF06; font-weight: 900;color: darkblue;">L2 INFORMATIQUE</button>
+
+                            <button type="button" name="bouton" class="btn btn-primary" value="GENIE" onclick="envoieValeur('GENIE')" style="background-color: white; border: 4px solid; border-color: #3131EC;font-weight: 900;color: darkblue;">GENIE LOGICIEL</button>
+
+                            <button type="button" name="bouton" class="btn btn-primary" value="RSS" onclick="envoieValeur('RSS')" style="background-color: white; border: 4px solid; border-color: #3131EC;font-weight: 900;color: darkblue;">RSS</button>
+
+                            <button type="button" name="bouton" class="btn btn-primary" value="L1DROIT" onclick="envoieValeur('L1DROIT')" style="background-color: white; border: 4px solid; border-color: #3131EC;font-weight: 900;color: darkblue;">L1 DROIT</button>
+
+                            <button type="button" name="bouton" class="btn btn-primary" value="L1AGRO" onclick="envoieValeur('L1AGRO')" style="background-color: white; border: 4px solid; border-color: #FCDF06; font-weight: 900;color: darkblue;">L1 AGRO-BUSINESS</button><br><br>
+
+                            <textarea name="commentaire" id="" cols="50" rows="8" placeholder="Entrez votre commentaire"></textarea><br>
+
+     <input type="submit" class="btn btn-primary" style="background-color: white; border: 4px solid; border-color: #3131EC;font-weight: 900; color: darkblue;" value="Envoyer le commentaire">
+
+                        </form>
+
+    <script src="formulaire.js"></script>
+    <script src="toummy.js"></script>
+</body>
+</html>

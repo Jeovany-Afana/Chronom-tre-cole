@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Page d'accueil</title>
+    
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="styles.css" rel="stylesheet" />
+        <link rel="stylesheet" href="style2.css">
+        <link rel="stylesheet" href="toummy.css" />
+    </head>
+    <body id="page-top" style="background-color:white;">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav" style="height:10%;background-color: #3131EC;border-radius:0 0 20px 20px;
+        box-shadow: 0 10px 7px rgb(17, 4, 90);">
+            <div class="container" style="background-color: #FCDF06;">
+                <img class="navbar-brand" src="supdeco logo.jpg">
+                <p id="heureActuelle"></p>
+                <img class="navbar-brand" src="Untitled.png" style="position:absolute; left:40%; height: 100%;">
+            </div>
+            <div class="dropdown" style="transition:1s ease;position:absolute; left:70%; z-index:1;">
+              
+                <div class="dropdown-center">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="background-color: #3131EC; border-color:#3131EC;">
+                      Choisir le nombre de classes
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li class="dropdown-item" id="uneClasse">Une Classe</li>
+                      <li class="dropdown-item" id="deuxClasses">Deux Classes</li>
+                      <li class="dropdown-item" id="troisClasses">Trois Classes</li>
+                      <li class="dropdown-item" id="quatreClasses">Quatre Classes</li>
+                    </ul>
+                  </div>
+
+                  <a href="index3.html" target="_blank"><button class="btn btn-outline-success" style="background-color: #3131EC; color: white;
+                  border-color: #3131EC;margin-top: 2%;" title="Laisser un commentaire qui va nous permettre d'améliorer l'application">Laisser un commentaire</button></a>
+           
+             
+        </div>
+            <div id="timer">00:00</div>
+
+            <div id="blancOeil1"></div>
+            <div id="oeil1"></div>
+            <div id="cleinOeil1"></div>
+        
+            
+            <div id="blancOeil2"></div>
+            <div id="oeil2"></div>
+            <div id="cleinOeil2"></div>
+            <div id="bouche"></div>
+
+              
+        </nav>
+
+        <!--PREMIERE CASE DE TEMPS-->
+        <div id="classe1">            
+            <input type="number" id="inputClasse1" placeholder="Heures">
+            <input type="number" id="selectMinutes1" placeholder="Min">
+              <select name="selection" id="selection1">
+                <option value="vide" disabled selected hidden>Veuillez choisir une classe</option>
+                <option value="BTL1">BTL1</option>
+                <option value="BTL1A">BTL1 A</option>
+                <option value="BTL2A">BTL2 A</option>
+                <option value="BTL2B">BTL2 B</option>
+                <option value="BTL2">BTL2(Tronc commun)</option>
+                <option value="BTL3">BTL3</option>
+                <option value="LICENCE1">LICENCE 1(Tronc commun)</option>
+                <option value="L1GESTIONA">L1 GESTION A</option>
+                <option value="L2GESTION">L2 GESTION(Tronc commun)</option>
+                <option value="L2GESTIONA">L2 GESTION A</option>
+                <option value="L2GESTIONB">L2 GESTION B</option>
+                <option value="L2GESTIONC">L2 GESTION C</option>
+                <option value="FINANCE">FINANCE-COMPTABILITE</option>
+                <option value="QHSE">QHSE</option>
+                <option value="COMMERCE">COMMERCE INTERNATIONAL</option>
+                <option value="GESTION">GESTION DES RESSOURCES HUMAINES</option>
+                <option value="L1INFOA">L1 INFORMATIQUE A</option>
+                <option value="L2INFO">L2 INFORMATIQUE</option>
+                <option value="GENIE">GENIE LOGICIEL</option>
+                <option value="RSS">RESEAU SYSTEME ET SECURITE</option>
+                <option value="L1DROIT">L1 DROIT</option>
+                <option value="L2DROIT">L2 DROIT</option>
+                <option value="L1AGRO">L1 AGRO-BUSINESS</option>
+                <option value="L3GESTION">L3 GESTION(Tronc Commun)</option>
+                <option value="L3INFO">L3 INFORMATIQUE(Tronc Commun)</option>
+              </select>
+            <div id="countdownClasse1" class="chrono"></div>
+            <button onclick="startCountdown1('Classe1')" id="demarrer">Démarrer</button><p id="heureDebut1">Start: </p>
+            <button onclick="pauseCountdown1()" id="pause">Pause</button> <p id="heureFin1">End: </p>
+            <button onclick="resetCountdown1('Classe1')" id="renitialise">Réinitialiser</button>
+        </div>
+
+        <!--DEUXIEME CASE DE TEMPS-->
+        <div id="classe2">
+            <input type="number" id="inputClasse2" placeholder="Heures">
+            <input type="number" id="selectMinutes2" placeholder="Min">
+              <select name="selection" id="selection2">
+                <option value="vide" disabled selected hidden>Veuillez choisir une classe</option>
+                <option value="BTL1">BTL1</option>
+                <option value="BTL1A">BTL1 A</option>
+                <option value="BTL2A">BTL2 A</option>
+                <option value="BTL2B">BTL2 B</option>
+                <option value="BTL2">BTL2(Tronc commun)</option>
+                <option value="BTL3">BTL3</option>
+                <option value="LICENCE1">LICENCE 1(Tronc commun)</option>
+                <option value="L1GESTIONA">L1 GESTION A</option>
+                <option value="L2GESTION">L2 GESTION(Tronc commun)</option>
+                <option value="L2GESTIONA">L2 GESTION A</option>
+                <option value="L2GESTIONB">L2 GESTION B</option>
+                <option value="L2GESTIONC">L2 GESTION C</option>
+                <option value="FINANCE">FINANCE-COMPTABILITE</option>
+                <option value="QHSE">QHSE</option>
+                <option value="COMMERCE">COMMERCE INTERNATIONAL</option>
+                <option value="GESTION">GESTION DES RESSOURCES HUMAINES</option>
+                <option value="L1INFOA">L1 INFORMATIQUE A</option>
+                <option value="L2INFO">L2 INFORMATIQUE</option>
+                <option value="GENIE">GENIE LOGICIEL</option>
+                <option value="RSS">RESEAU SYSTEME ET SECURITE</option>
+                <option value="L1DROIT">L1 DROIT</option>
+                <option value="L2DROIT">L2 DROIT</option>
+                <option value="L1AGRO">L1 AGRO-BUSINESS</option>
+                <option value="L3GESTION">L3 GESTION(Tronc Commun)</option>
+                <option value="L3INFO">L3 INFORMATIQUE(Tronc Commun)</option>
+              </select>
+            <div id="countdownClasse2" class="chrono"></div>
+            <button onclick="startCountdown2('Classe2')" id="demarrer2">Démarrer</button></button><p id="heureDebut2" >Start: </p>
+            <button onclick="pauseCountdown2()" id="pause2">Pause</button><p id="heureFin2">End: </p>
+            <button onclick="resetCountdown2('Classe2')" id="renitialise2">Réinitialiser</button>
+        </div>
+
+         <!--TROISIEME CASE DE TEMPS-->
+         <div id="classe3">
+            <input type="number" id="inputClasse3" placeholder="Heures">
+            <input type="number" id="selectMinutes3" placeholder="Min">
+              <select name="selection" id="selection3">
+                <option value="vide" disabled selected hidden>Veuillez choisir une classe</option>
+                <option value="BTL1">BTL1</option>
+                <option value="BTL1A">BTL1 A</option>
+                <option value="BTL2A">BTL2 A</option>
+                <option value="BTL2B">BTL2 B</option>
+                <option value="BTL2">BTL2(Tronc commun)</option>
+                <option value="BTL3">BTL3</option>
+                <option value="LICENCE1">LICENCE 1(Tronc commun)</option>
+                <option value="L2GESTION">L2 GESTION(Tronc commun)</option>
+                <option value="L1GESTIONA">L1 GESTION A</option>
+                <option value="L2GESTIONA">L2 GESTION A</option>
+                <option value="L2GESTIONB">L2 GESTION B</option>
+                <option value="L2GESTIONC">L2 GESTION C</option>
+                <option value="FINANCE">FINANCE-COMPTABILITE</option>
+                <option value="QHSE">QHSE</option>
+                <option value="COMMERCE">COMMERCE INTERNATIONAL</option>
+                <option value="GESTION">GESTION DES RESSOURCES HUMAINES</option>
+                <option value="L1INFOA">L1 INFORMATIQUE A</option>
+                <option value="L2INFO">L2 INFORMATIQUE</option>
+                <option value="GENIE">GENIE LOGICIEL</option>
+                <option value="RSS">RESEAU SYSTEME ET SECURITE</option>
+                <option value="L1DROIT">L1 DROIT</option>
+                <option value="L2DROIT">L2 DROIT</option>
+                <option value="L1AGRO">L1 AGRO-BUSINESS</option>
+                <option value="L3GESTION">L3 GESTION(Tronc Commun)</option>
+                <option value="L3INFO">L3 INFORMATIQUE(Tronc Commun)</option>
+              </select>
+            <div id="countdownClasse3" class="chrono"></div>
+            <button onclick="startCountdown3('Classe3')" id="demarrer3">Démarrer</button></button><p id="heureDebut3" >Start: </p>
+            <button onclick="pauseCountdown3()" id="pause3">Pause</button><p id="heureFin3">End: </p>
+            <button onclick="resetCountdown3('Classe3')" id="renitialise3">Réinitialiser</button>
+        </div>
+
+
+         <!--QUATRIEME CASE DE TEMPS-->
+         <div id="classe4">
+            <input type="number" id="inputClasse4" placeholder="Heures">
+            <input type="number" id="selectMinutes4" placeholder="Min">
+              <select name="selection" id="selection4">
+                <option value="vide" disabled selected hidden>Veuillez choisir une classe</option>
+                <option value="BTL1">BTL1</option>
+                <option value="BTL1A">BTL1 A</option>
+                <option value="BTL2A">BTL2 A</option>
+                <option value="BTL2B">BTL2 B</option>
+                <option value="BTL2">BTL2(Tronc commun)</option>
+                <option value="BTL3">BTL3</option>
+                <option value="LICENCE1">LICENCE 1(Tronc commun)</option>
+                <option value="L1GESTIONA">L1 GESTION A</option>
+                <option value="L2GESTION">L2 GESTION(Tronc commun)</option>
+                <option value="L2GESTIONA">L2 GESTION A</option>
+                <option value="L2GESTIONB">L2 GESTION B</option>
+                <option value="L2GESTIONC">L2 GESTION C</option>
+                <option value="FINANCE">FINANCE-COMPTABILITE</option>
+                <option value="QHSE">QHSE</option>
+                <option value="COMMERCE">COMMERCE INTERNATIONAL</option>
+                <option value="GESTION">GESTION DES RESSOURCES HUMAINES</option>
+                <option value="L1INFOA">L1 INFORMATIQUE A</option>
+                <option value="L2INFO">L2 INFORMATIQUE</option>
+                <option value="GENIE">GENIE LOGICIEL</option>
+                <option value="RSS">RESEAU SYSTEME ET SECURITE</option>
+                <option value="L1DROIT">L1 DROIT</option>
+                <option value="L2DROIT">L2 DROIT</option>
+                <option value="L1AGRO">L1 AGRO-BUSINESS</option>
+                <option value="L3GESTION">L3 GESTION(Tronc Commun)</option>
+                <option value="L3INFO">L3 INFORMATIQUE(Tronc Commun)</option>
+              </select>
+            <div id="countdownClasse4" class="chrono"></div>
+            <button onclick="startCountdown4('Classe4')" id="demarrer4">Démarrer</button></button><p id="heureDebut4" >Start: </p>
+            <button onclick="pauseCountdown4()" id="pause4">Pause</button><p id="heureFin4">End: </p>
+            <button onclick="resetCountdown4('Classe4')" id="renitialise4">Réinitialiser</button>
+        </div>
+
+        <script src="script.js"></script>
+        <script src="chronometre.js"></script>
+        <script src="script1.js"></script>
+        <script src="toummy.js"></script>  
+        <script src="script2.js"></script>
+        <script src="script3.js"></script>
+        <script src="script4.js"></script>
+        <script src="deplacement.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    </body>
+</html>

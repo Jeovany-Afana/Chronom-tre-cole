@@ -1,0 +1,196 @@
+body
+  {
+     margin: 0;
+      padding: 0;
+      text-align: center;
+  }
+
+#classe1,#classe2,#classe3,#classe4
+  {
+    text-align: center;
+    border: 4px groove #3131EC;
+    height: 32%;
+    width: 45%;
+    position: absolute;
+    border-radius: 20px;
+    transition: 1s ease;
+    box-shadow: 0px 0px 7px 2px #06035999;
+    padding-top: 0.2%;
+  }
+
+#classe1
+  {
+   
+     top: 43%;
+     left: 25%;
+     height: 47%;   
+  }
+
+  #classe2
+  {
+     top: 32%;
+     left: 50%;
+     opacity: 0;
+     z-index: -1;
+  }
+
+  #classe3
+  {
+     top: 65%;
+     left: 3%;
+     opacity: 0;
+     z-index: -1;
+  }
+
+
+  #classe4
+  {
+     top: 65%;
+     left: 50%;
+     opacity: 0;
+     z-index: -1;
+  }
+
+  #demarrer,#pause,#renitialise,#demarrer2,#pause2,#renitialise2,#demarrer3,#pause3,#renitialise3,#demarrer4,#pause4,#renitialise4
+    {
+        position: absolute;
+        top:80%;
+         border-radius: 10px;
+          font-weight: 900;
+            text-shadow: 20%;  
+            border:3px double white;
+              font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;  
+    } 
+ 
+    #demarrer,#demarrer2,#demarrer3,#demarrer4
+      {
+        left: 2%;
+        background-color: #0d6efd;
+      }
+
+    #pause,#pause2,#pause3,#pause4
+      {
+        left: 43%;
+        background-color: #f11e1e;
+      }
+
+     #renitialise,#renitialise2,#renitialise3,#renitialise4
+       {
+         left: 80%;
+          background-color: gray;
+       }
+
+#countdownClasse1,#countdownClasse2,#countdownClasse3,#countdownClasse4
+  {
+    color:#3131EC;
+      margin-top: 5%;
+       font-family:Verdana, Geneva, Tahoma, sans-serif;
+     font-size: 110px;
+      font-weight: 900;
+      translate: 1s ease;
+      text-shadow: -7px 3px 7px #282781;
+  }
+
+  input[type='number']
+    {
+         width: 16%;
+        border-radius: 10px;
+          border: 3px groove blue;
+           background-color: #a8cafc;
+           color: rgb(9, 0, 131);
+           font-family: Arial, Helvetica, sans-serif;
+           font-weight: bold;
+           text-align: center;
+    }
+
+    select
+      {
+         color: white;
+          border: 3px groove #3131EC;
+          background-color: #0d6efd;
+          font-family: Arial, Helvetica, sans-serif;
+           font-weight: 900;
+      }
+
+option
+  {
+     border: 1px solid #01275F;
+    font-weight: 900;
+      background-color: #a8cafc;
+       color: #01275f;
+  }
+      
+
+#heureDebut1,#heureDebut2,#heureDebut3,#heureDebut4
+  {
+    color: rgb(10, 180, 10);
+    position: absolute;
+    font-size: 21px;
+    font-weight: 900;
+    font-family: Arial, Helvetica, sans-serif;
+    left: 17%;
+    top: 80%;
+    text-shadow: 0px 3px 7px #035e33;
+  }
+
+  #heureFin1,#heureFin2,#heureFin3,#heureFin4
+    {
+        color: red;
+        position: absolute;
+        font-size: 21px;
+        font-weight: 900;
+        font-family: Arial, Helvetica, sans-serif;
+        left: 54%;
+        top: 80%;
+        text-shadow: 0px 3px 7px #da0808;
+    }
+
+    h3
+      {
+        margin-top: 16%;
+         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+           font-weight: 900;
+             color: blue;
+               background-color: rgb(165, 207, 243);
+                 width: 40%;
+                  margin-left: 30%;
+                   border-radius: 10px;
+      }
+
+form
+  {
+     margin-top: 16%;
+     text-align: center;
+  }
+
+     form button
+        {
+            border:9px groove;
+            width:auto;
+            font-weight: 900;
+             font-family: Arial, Helvetica, sans-serif;
+            font-size: 14px;
+           color:darkblue;
+             margin-top: 1%;
+              border-radius: 10px;
+              margin-right: 1%;
+              transition: 1s ease;
+        }
+
+        textarea
+          {
+            width: fit-content;
+            text-align: center;
+            border: 4px groove #3131EC;
+           font-family: 'Times New Roman', Times, serif;
+           font-weight: 800;
+            border-radius: 20px;
+          }
+
+        #heureActuelle
+          {
+            font-size: 4.5rem;
+            color: darkblue;
+             position: absolute;
+               left: 21%;
+          }
